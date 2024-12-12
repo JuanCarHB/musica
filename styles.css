@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    font-family: 'Caudex', serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ff9900;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+/* Formulario de agregar álbum (oculto por defecto) */
+.form-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-container button {
+    padding: 10px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #ff5f00;
+}
+
+/* Estilos para los álbumes */
+#albums-section {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#posts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px 0;
+}
+
+#posts {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 5px solid #ff9900;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.post .quote {
+    font-style: italic;
+    color: #888;
+}
+
+.post:hover {
+    transform: scale(1.05);
+    background-color: #fffbf1;
+}
+
+.post.selected {
+    background-color: #ffef91;
+}
+
+/* Flechas de navegación */
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .post {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinilos y Álbumes Musicales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Vinilos & Álbumes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#albums-section">Álbumes</a></li> <!-- Primero "Álbumes" -->
+                <li><a href="#" id="agregar-albumes">Agregar Álbum</a></li> <!-- Luego "Agregar Álbumes" -->
+            </ul>
+        </nav>
+    </header>
+
+    <div id="formulario" class="form-container">
+        <h3>Agregar Álbum</h3>
+        <form id="form-album">
+            <input type="text" placeholder="Título del Álbum" id="album-title" required>
+            <input type="text" placeholder="Artista" id="album-artist" required>
+            <textarea placeholder="Reseña del Álbum" id="album-review" required></textarea>
+            <input type="url" placeholder="Imagen del Álbum (URL)" id="album-img" required>
+            <input type="url" placeholder="Audio de la canción (URL)" id="album-audio" required>
+            <textarea placeholder="Letra de la canción" id="album-lyrics" required></textarea>
+            <button type="submit">Agregar Álbum</button>
+        </form>
+    </div>
+
+    <main>
+        <section id="albums-section">
+            <h2>Álbumes Musicales</h2>
+            <div id="posts-container">
+                <div id="posts"></div>
+                <div id="prev" class="arrow">‹</div>
+                <div id="next" class="arrow">›</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
