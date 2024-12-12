@@ -23,11 +23,4 @@ La página está diseñada para ofrecer una interfaz sencilla y atractiva que pe
 3. **Interacción de Hover**: Al pasar el mouse sobre un álbum o una opción del menú, el color de fondo cambia, proporcionando una experiencia visual más dinámica.
 4. **Menú de Navegación**: El menú de navegación permite a los usuarios ver los álbumes o agregar nuevos álbumes. Este es accesible desde cualquier punto de la página.
 
-## Instrucciones de uso
 
-### 1. Clonar el repositorio
-
-Puedes clonar este repositorio usando Git:
-
-```bash
-git clone https://github.com/tu-usuario/vinilos-y-albumes.git
